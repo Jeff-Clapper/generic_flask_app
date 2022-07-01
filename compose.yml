@@ -1,7 +1,10 @@
+version: "3.8"
+
 services:
-  web:
+  web-fe:
     build: 
       context: .
       dockerfile: dockerfile
     ports:
-      - "5000:5000"
+      - target: "5000"
+        published: "5000"
